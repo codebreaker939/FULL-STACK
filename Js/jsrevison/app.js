@@ -110,3 +110,95 @@
 
 
 
+// const student = {
+//      name:"aniket",
+//      mks:99,
+//      printmks : function(){
+//         console.log("mks=",this.mks)
+//      }
+// }
+
+// object and classes
+
+
+// const emp = {
+//     calcTax(salary) {
+//         console.log("hi tax is 10%", salary/10);
+//     },
+// };
+
+// const aniket = {
+//     salary :50000,
+// };
+
+// aniket.__proto__ = emp
+
+
+// inheritance of class 
+
+// class a {
+//     hello(){
+//         console.log("hello");
+//     }
+// }
+
+// class b extends a {
+//     bye(){
+//         console.log("bye");
+//     }
+//     hello(){
+//         console.log("hiiii")
+//     }
+// }
+
+// let c = new b();
+
+// callback and callback hell
+
+// function getData (dataid , nxtdata) {
+//     setTimeout(()=>{
+//         console.log("data ", dataid);
+//         if(nxtdata){
+//             nxtdata();
+//         }
+//     },2000);
+// }
+
+// getData(1,()=>{
+//     getData(2,()=>{
+//         getData(300,()=>{
+//             getData(400,()=>{
+//                 getData(500);
+//             })
+//         });
+//     });
+// });
+
+
+
+// promises with resolve
+// function getData (dataid , nxtdata) {
+//     return new Promise ((resolve , reject) =>{
+//          setTimeout(()=>{
+//         console.log("data ", dataid);
+//         resolve("done");
+//         if(nxtdata){
+//             nxtdata();
+//         }
+//     },5000);
+//     })
+// }
+
+// promises with reject
+
+// function getData(dataid, nxtdata) {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//      // console.log("data ", dataid);
+//       reject("log missing")
+//       if (nxtdata) {
+//         nxtdata();
+//       }
+//     }, 5000);
+//   });
+// }
